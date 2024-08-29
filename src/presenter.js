@@ -1,15 +1,15 @@
-import sumar from "./sumador";
+import {precioxcantidad} from "./totalizador.js";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
+const cantidad_input = document.querySelector("#inputcantidad");
+const precio_input = document.querySelector("#inputprecio");
 const form = document.querySelector("#sumar-form");
 const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+  const cantidad = cantidad_input.value;
+  const precio = precio_input.value;
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  div.innerHTML = "<p> El precio por la cantidad es: " + precioxcantidad(cantidad, precio) + "</p>";
 });

@@ -3,7 +3,7 @@ export function mostrar_canntidad(cantidad) {
   }
 
 export function precioxcantidad(cantidad,precio){
-    return 4000
+    return cantidad * precio;
 }
 
 
