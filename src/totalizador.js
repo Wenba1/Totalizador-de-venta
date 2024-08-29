@@ -1,6 +1,10 @@
-function totalizadorventas(cantidad) {
+export function mostrar_canntidad(cantidad) {
     return cantidad;
   }
-  
-  export default totalizadorventas;
+
+export function precioxcantidad(cantidad,precio){
+    return 4000
+}
+
+
   
