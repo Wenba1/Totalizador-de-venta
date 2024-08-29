@@ -1,5 +1,5 @@
 function totalizadorventas(cantidad) {
-    return 4 //cantidad;
+    return cantidad;
   }
   
   export default totalizadorventas;
